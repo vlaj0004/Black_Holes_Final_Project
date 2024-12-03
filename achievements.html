@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-wrapper blue darken-3">
+            <a href="achievements.html" class="brand-logo center">Achievements</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="#" id="nav-home">Home</a></li>
+                <li><a href="#" id="nav-learn">Learn</a></li>
+                <li><a href="#" id="nav-achievements">Achievements</a></li>
+                <li><a href="#" id="nav-references">References</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper for Flexbox -->
+    <div class="wrapper">
+        <!-- Main Content -->
+        <div class="container flex-grow">
+            <!-- Achievements Content -->
+            <section class="section">
+                <div class="row">
+                    <div class="col s12 center">
+                        <h2>Your Achievements</h2>
+                        <h5 class="grey-text text-darken-3">"Milestones of Your Journey"</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m10 offset-m1">
+                        <p class="flow-text">
+                            This is your progress! Below is a list of achievements you've unlocked as you explore
+                            and learn about Stephen Hawking's groundbreaking work.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Reset Achievements Button (Optional Enhancement) -->
+                <div class="row">
+                    <div class="col s12 center">
+                        <button id="reset-achievements" class="btn red">Reset Achievements</button>
+                    </div>
+                </div>
+
+                <!-- Achievements List -->
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="collection" id="achievements-list">
+                            <!-- Achievements will be dynamically inserted here -->
+                        </ul>
+                        <p id="no-achievements" class="flow-text center grey-text text-darken-3">You have no achievements yet. Start learning to unlock achievements.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer blue darken-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center">
+                        <p class="grey-text text-lighten-4">© 2024 Stefan Vlajich</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Your Custom JS -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

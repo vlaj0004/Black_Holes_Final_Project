@@ -1,0 +1,114 @@
+/* main.css */
+
+/* Flexbox Layout for Sticky Footer */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.flex-grow {
+    flex: 1;
+}
+
+/* Collapsible Card Styles */
+.collapsible.popout .collapsible-header {
+    background-color: #1E88E5; /* Materialize blue darken-2 */
+    color: white;
+    font-weight: bold;
+}
+
+.collapsible.popout .collapsible-body {
+    padding: 20px;
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+/* Equal Height Cards */
+.collapsible.popout li {
+    display: flex;
+    flex-direction: column;
+}
+
+.collapsible.popout .collapsible-header {
+    flex: 0 0 auto;
+}
+
+.collapsible.popout .collapsible-body {
+    flex: 1 1 auto;
+}
+
+/* Adjust the top margin of the container */
+.container {
+    margin-top: 20px;
+}
+
+/* Style for the section headings */
+h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Style for flow-text paragraphs */
+.flow-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Footer Text Alignment */
+.page-footer .container {
+    padding-bottom: 20px;
+}
+
+/* Ensure Footer Spans Full Width */
+.page-footer {
+    margin: 0;
+}
+
+/* Remove max-width and adjust padding for full-width footer */
+.page-footer .container {
+    width: 100%;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Button Alignment within Cards */
+.card-action {
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 600px) {
+    .card-action {
+        padding: 10px 0;
+    }
+}
+
+/* Optional: Add a subtle shadow to cards on hover */
+.card.hoverable {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card.hoverable:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional Styles for Collapsible Icons */
+.collapsible.popout .material-icons {
+    margin-right: 10px;
+}
